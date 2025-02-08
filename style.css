@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#header {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(47, 50, 55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+}
+
+#header a {
+    color: black;
+}
+
+.text p {
+    margin: 15px 15px;
+    padding: 5px;
+    color: rgb(235, 228, 228);
+    border-radius: 10px;
+    font-size: larger;
+    display: inline-block;
+}
+
+.text p:hover {
+    background-color: rgb(190, 190, 190);
+    color: rgb(36, 37, 37);
+    box-shadow: 0 0 15px 3px rgba(49, 47, 47, 0.7);
+}
+
+/*  footer section */
+#footer {
+    background-color: rgb(36, 37, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#footer h2 {
+    margin-bottom: 15px;
+    color: rgb(235, 228, 228);
+}
+
+.icon {
+    margin: 12px;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 24px;
+    display: inline-block;
+    color: rgb(235, 228, 228);
+}
+
+.icon:hover {
+    background-color: rgb(190, 190, 190);
+    color: rgb(36, 37, 37);
+}
+
+/* Home page */
+
+#page {
+    width: 100%;
+    background-color: rgb(222, 227, 234);
+}
+
+#box1 {
+    height: 95%;
+    width: 60%;
+    margin: 120px 50px;
+}
+
+#box1 p {
+    margin-top: 20px;
+}
+
+#box2 {
+    height: 95%;
+    width: 40%;
+    margin: 120px 20px;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box2 img,
+#box2-2 img,
+#box3-2 img {
+    height: 60%;
+    width: auto;
+    margin: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Styling for About Page */
+
+#page2 {
+    width: 100%;
+    background-color: rgb(222, 227, 234);
+}
+
+#content2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 60px 60px;
+}
+
+#box2-1 {
+    width: 60%;
+    margin: 20px;
+}
+
+#box2-2 {
+    width: 40%;
+    margin: 20px;
+}
+
+#box2-1 h1,
+h3,
+p {
+    margin: 25px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#about {
+    padding: 5px;
+}
+#btns {
+    display: flex;
+    margin-top: 20px;
+    margin : 20px;
+    text-align: center;
+}
+
+#btns a {
+    width: 23%;
+    padding: 10px 12px;
+    border: solid;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+#btns a:hover {
+    background-color: rgb(49, 47, 47);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px 3px rgba(49, 47, 47, 0.7);
+}
+
+/* Project Section */
+#page3 {
+    width: 100%;
+    background-color: rgb(222, 227, 234);
+}
+
+#content3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 60px;
+    height: 100%;
+}
+
+#box3-1 {
+    width: 60%;
+    margin: 20px;
+}
+
+#box3-2 {
+    width: 40%;
+    margin: 20px;
+}
+
+@media screen and (max-width: 680px) {
+
+    /* General Styles */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    #header {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0;
+        padding-bottom: 0.5rem;
+    }
+
+    #header a {
+        font-size: smaller;
+    }
+
+    .text p {
+        margin: 10px;
+        font-size: medium;
+    }
+
+    .text p:hover {
+        box-shadow: none;
+    }
+
+    /* Footer */
+    #footer h2 {
+        font-size: larger;
+    }
+
+    .icon {
+        font-size: 20px;
+        margin: 8px;
+        padding: 8px;
+    }
+
+    /* Home Page */
+    #page {
+        width: 100%;
+        padding: 10px;
+        margin-top: 15%;
+    }
+
+    #box1,
+    #box2 {
+        width: 100%;
+        margin: 20px 0;
+        padding: 10px;
+    }
+    #box2 img {
+        height: 40%;
+        width: 80%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* About Page */
+    #content2 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #box2-1,
+    #box2-2 {
+        width: 100%;
+        padding: 0px;
+    }
+
+    #box1 h1,
+    #box2-1 h1 {
+        margin: 0;
+    }
+
+    #box2-1 h3,
+    #box2-1 p {
+        margin: 15px;
+        font-size: smaller;
+    }
+
+    #btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #btns a {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    /* Project Section */
+    #content3 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #box3-1,
+    #box3-2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #footer-links {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 20%;
+    }
+}
